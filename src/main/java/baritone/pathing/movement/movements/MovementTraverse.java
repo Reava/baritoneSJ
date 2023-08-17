@@ -210,6 +210,7 @@ public class MovementTraverse extends Movement {
 
             return state.setTarget(new MovementState.MovementTarget(new Rotation(yawToDest, pitchToBreak), true))
                     .setInput(Input.MOVE_FORWARD, true)
+                    .setInput(Input.JUMP, true) // for some reason this doesnt trigger any jumps?
                     .setInput(Input.SPRINT, true);
         }
 
